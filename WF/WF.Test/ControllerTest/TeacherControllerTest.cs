@@ -1,10 +1,10 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace WF.Test
+namespace WF.Test.ControllerTest
 {
     [TestClass]
-    public class UnitTest1
+    public class TeacherControllerTest
     {
         [TestMethod]
         public void TestMethod1()
