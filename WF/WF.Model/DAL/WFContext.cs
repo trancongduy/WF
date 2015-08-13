@@ -8,10 +8,10 @@ using WF.Model.TeacherModel;
 
 namespace WF.Model.DAL
 {
-    class WFContext : DbContext
+    public class WFContext : DbContext
     {
         public WFContext()
-            : base("DefaultConnection")
+            : base("WFConnection")
         {
 
         }
