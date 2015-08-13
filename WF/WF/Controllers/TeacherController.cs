@@ -4,36 +4,23 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-
+using WF.Model.DAL;
 namespace WF.Controllers
 {
     public class TeacherController : ApiController
     {
-        // GET api/<controller>
-        public IEnumerable<string> Get()
+        private WFContext _dbContext;
+        private WFContext db
         {
-            return new string[] { "value1", "value2" };
+            get
+            {
+                if (_backupsetDbSet == null)
+                {
+                    _backupsetDbSet = new BackupSetContext();
+                }
+                return _backupsetDbSet;
+            }
         }
 
-        // GET api/<controller>/5
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/<controller>
-        public void Post([FromBody]string value)
-        {
-        }
-
-        // PUT api/<controller>/5
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE api/<controller>/5
-        public void Delete(int id)
-        {
-        }
     }
 }
