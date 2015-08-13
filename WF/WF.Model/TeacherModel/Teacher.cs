@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace WF.Model.TeacherModel
 {
     public class Teacher
@@ -24,5 +25,6 @@ namespace WF.Model.TeacherModel
         [MaxLength(11)]
         [Required]
         public string PhoneNumber { get; set; }
+        //public  Status { get; set; }
     }
 }

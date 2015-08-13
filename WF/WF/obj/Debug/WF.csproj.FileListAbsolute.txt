@@ -63,3 +63,5 @@ C:\Users\tranc\Documents\GitHub\WF\WF\WF\bin\System.Web.Http.Owin.xml
 C:\Users\tranc\Documents\GitHub\WF\WF\WF\obj\Debug\WF.csprojResolveAssemblyReference.cache
 C:\Users\tranc\Documents\GitHub\WF\WF\WF\obj\Debug\WF.dll
 C:\Users\tranc\Documents\GitHub\WF\WF\WF\obj\Debug\WF.pdb
+C:\Users\tranc\Documents\GitHub\WF\WF\WF\bin\WF.WebAPI.Base.dll
+C:\Users\tranc\Documents\GitHub\WF\WF\WF\bin\WF.WebAPI.Base.pdb
