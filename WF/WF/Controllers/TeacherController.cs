@@ -22,5 +22,8 @@ namespace WF.Controllers
             }
         }
 
+        public IHttpActionResult GetStudents() {
+            return Ok(DbContext.Teachers);
+        }
     }
 }

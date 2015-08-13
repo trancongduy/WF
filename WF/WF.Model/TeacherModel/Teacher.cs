@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WF.Model.TeacherModel
 {
-    class Teacher
+    public class Teacher
     {
         public int ID { get; set; }
         public string LastName { get; set; }

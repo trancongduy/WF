@@ -15,6 +15,6 @@ namespace WF.Model.DAL
         {
 
         }
-        DbSet<Teacher> Accounts { get; set; }
+        public DbSet<Teacher> Teachers { get; set; }
     }
 }
