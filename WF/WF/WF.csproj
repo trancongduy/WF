@@ -213,6 +213,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\scripts\app.js" />
+    <Content Include="app\scripts\controllers\controller.js" />
+    <Content Include="app\scripts\directives\directive.js" />
+    <Content Include="app\scripts\filters\filter.js" />
+    <Content Include="app\scripts\js\classes.js" />
+    <Content Include="app\scripts\services\service.js" />
+    <Content Include="app\scripts\test\test.js" />
+    <Content Include="app\styles\my-style.css" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -254,13 +261,6 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="app\scripts\controllers\" />
-    <Folder Include="app\scripts\directives\" />
-    <Folder Include="app\scripts\filters\" />
-    <Folder Include="app\scripts\js\" />
-    <Folder Include="app\scripts\services\" />
-    <Folder Include="app\scripts\test\" />
-    <Folder Include="app\styles\" />
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
