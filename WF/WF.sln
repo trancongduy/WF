@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Test", "WF.Test\WF.Test.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Model", "WF.Model\WF.Model.csproj", "{2928D68B-E8AA-46CE-9C42-FDA47F4EE713}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Base", "WF.Base\WF.Base.csproj", "{47CCC4DE-AC26-46A5-9DDE-5749687D8EBC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,16 @@ Global
 		{2928D68B-E8AA-46CE-9C42-FDA47F4EE713}.Release|ARM.ActiveCfg = Release|Any CPU
 		{2928D68B-E8AA-46CE-9C42-FDA47F4EE713}.Release|x64.ActiveCfg = Release|Any CPU
 		{2928D68B-E8AA-46CE-9C42-FDA47F4EE713}.Release|x86.ActiveCfg = Release|Any CPU
+		{47CCC4DE-AC26-46A5-9DDE-5749687D8EBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47CCC4DE-AC26-46A5-9DDE-5749687D8EBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47CCC4DE-AC26-46A5-9DDE-5749687D8EBC}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{47CCC4DE-AC26-46A5-9DDE-5749687D8EBC}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{47CCC4DE-AC26-46A5-9DDE-5749687D8EBC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{47CCC4DE-AC26-46A5-9DDE-5749687D8EBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47CCC4DE-AC26-46A5-9DDE-5749687D8EBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47CCC4DE-AC26-46A5-9DDE-5749687D8EBC}.Release|ARM.ActiveCfg = Release|Any CPU
+		{47CCC4DE-AC26-46A5-9DDE-5749687D8EBC}.Release|x64.ActiveCfg = Release|Any CPU
+		{47CCC4DE-AC26-46A5-9DDE-5749687D8EBC}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,5 +74,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{2CC58F77-CBD7-4A7A-A651-91F56FC1E417} = {8CE3D5CB-7205-4F0A-8017-E5B528D48672}
 		{2928D68B-E8AA-46CE-9C42-FDA47F4EE713} = {6DEC33F1-7665-4168-B519-59D61AFACF96}
+		{47CCC4DE-AC26-46A5-9DDE-5749687D8EBC} = {6DEC33F1-7665-4168-B519-59D61AFACF96}
 	EndGlobalSection
 EndGlobal
