@@ -10,3 +10,4 @@ C:\Users\tranc\Documents\GitHub\WF\WF\WF.Model\bin\Debug\EntityFramework.xml
 C:\Users\tranc\Documents\GitHub\WF\WF\WF.Model\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\tranc\Documents\GitHub\WF\WF\WF.Model\obj\Debug\WF.Model.dll
 C:\Users\tranc\Documents\GitHub\WF\WF\WF.Model\obj\Debug\WF.Model.pdb
+C:\Users\tranc\Documents\GitHub\WF\WF\WF.Model\obj\Debug\WF.Model.csprojResolveAssemblyReference.cache

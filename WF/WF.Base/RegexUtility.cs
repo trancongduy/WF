@@ -17,7 +17,7 @@ namespace WF.Base
             {
                 if (_ipRegex == null)
                 {
-                    _ipRegex = new Regex(IpPattern);
+                    _ipRegex = new Regex(EmailPattern);
                 }
                 return _ipRegex;
             }

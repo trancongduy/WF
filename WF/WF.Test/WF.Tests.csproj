@@ -36,6 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -52,6 +53,21 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ControllerTest\TeacherControllerTest.cs" />
+    <Compile Include="TestValidation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WF.Base\WF.Base.csproj">
+      <Project>{756b025d-1285-4cf5-8585-2aa983b44832}</Project>
+      <Name>WF.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WF.Model\WF.Model.csproj">
+      <Project>{2928d68b-e8aa-46ce-9c42-fda47f4ee713}</Project>
+      <Name>WF.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WF.WebAPI.Base\WF.WebAPI.Base.csproj">
+      <Project>{c6c5a2be-ceb5-408c-818f-263b656929bd}</Project>
+      <Name>WF.WebAPI.Base</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

@@ -5,6 +5,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using WF.Model.DAL;
+using WF.Model.TeacherModel;
 namespace WF.Controllers
 {
     public class TeacherController : ApiController
@@ -22,8 +23,28 @@ namespace WF.Controllers
             }
         }
 
-        public IHttpActionResult GetStudents() {
+        [HttpGet]
+        public IHttpActionResult GetTeachers()
+        {
             return Ok(DbContext.Teachers);
+        }
+
+        [HttpGet]
+        public IHttpActionResult FindTeacherByID(int id)
+        {
+            return Ok(DbContext.Teachers.SingleOrDefault(n => n.ID == id));
+        }
+
+        [HttpPost]
+        public IHttpActionResult AddTeacher(Teacher teacher)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            var addteacher = DbContext.Teachers.Add(teacher);
+            DbContext.SaveChanges();
+            return CreatedAtRoute("ActionApi", new { action = "FindTeacherByID", id = addteacher.ID }, teacher);
         }
     }
 }
