@@ -1,0 +1,4 @@
+C:\Users\tranc\Documents\GitHub\WF\WF\WF.Test\bin\Debug\WF.Test.dll
+C:\Users\tranc\Documents\GitHub\WF\WF\WF.Test\bin\Debug\WF.Test.pdb
+C:\Users\tranc\Documents\GitHub\WF\WF\WF.Test\obj\Debug\WF.Test.dll
+C:\Users\tranc\Documents\GitHub\WF\WF\WF.Test\obj\Debug\WF.Test.pdb
