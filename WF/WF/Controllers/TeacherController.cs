@@ -10,15 +10,15 @@ namespace WF.Controllers
     public class TeacherController : ApiController
     {
         private WFContext _dbContext;
-        private WFContext db
+        private WFContext DbContext
         {
             get
             {
-                if (_backupsetDbSet == null)
+                if (_dbContext == null)
                 {
-                    _backupsetDbSet = new BackupSetContext();
+                    _dbContext = new WFContext();
                 }
-                return _backupsetDbSet;
+                return _dbContext;
             }
         }
 
