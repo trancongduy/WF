@@ -183,7 +183,7 @@
          * Shows the first page
          *
          * */
-        showFirst: function () {
+        shoVMSirst: function () {
             var pages = this.getPages();
 
             if (pages.first) {
@@ -228,7 +228,7 @@
 
             switch (type) {
             case "first":
-                currentTarget.bootstrapPaginator("showFirst");
+                currentTarget.bootstrapPaginator("shoVMSirst");
                 break;
             case "prev":
                 currentTarget.bootstrapPaginator("showPrevious");

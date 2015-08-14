@@ -1,9 +1,9 @@
-namespace WF.Model.Migrations
+namespace VMS.Model.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class WFMigration : DbMigration
+    public partial class VMSMigration : DbMigration
     {
         public override void Up()
         {

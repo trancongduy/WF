@@ -41,7 +41,7 @@ Globalize.addCultureInfo( "rw-RW", "default", {
 			pattern: ["$-n","$ n"],
 			",": " ",
 			".": ",",
-			symbol: "RWF"
+			symbol: "RVMS"
 		}
 	},
 	calendars: {

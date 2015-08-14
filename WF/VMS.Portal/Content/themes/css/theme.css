@@ -1234,15 +1234,15 @@ body.sidebar-right-open #sidebar_right {
   A. Icons - See Documentation For More Info
 ================================================= */
 /* Some font libraries have large file sizes. 
-* We optionally can attach .wf-loading to the 
+* We optionally can attach .VMS-loading to the 
 * body tag and have the fonts only visible after 
 * they are fully loaded or cached. Prevents rough
 * icon flash and is currently used only on index.html */
-.wf-loading .glyphicons,
-.wf-loading .glyphicon,
-.wf-loading .imoon,
-.wf-loading .fa,
-.wf-loading .iconsweets {
+.VMS-loading .glyphicons,
+.VMS-loading .glyphicon,
+.VMS-loading .imoon,
+.VMS-loading .fa,
+.VMS-loading .iconsweets {
   opacity: 0 !important; }
 
 /* Icon Transitions */

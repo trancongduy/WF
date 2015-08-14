@@ -117,8 +117,8 @@ package {
 			clipText = newText;
 		}
 		
-		public function setFileName(newFileName:String):void {
-			fileName = newFileName;
+		public function setFileName(neVMSileName:String):void {
+			fileName = neVMSileName;
 		}
 		
 		public function setAction(newAction:String):void {

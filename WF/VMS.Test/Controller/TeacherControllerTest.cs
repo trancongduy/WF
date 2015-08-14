@@ -1,8 +1,8 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using WF.Model.TeacherModel;
+using VMS.Model.TeacherModel;
 
-namespace WF.Test.ControllerTest
+namespace VMS.Test.Controller
 {
     [TestClass]
     public class TeacherControllerTest

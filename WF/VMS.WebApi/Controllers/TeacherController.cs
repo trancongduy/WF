@@ -4,9 +4,9 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using WF.Model.DAL;
-using WF.Model.TeacherModel;
-namespace WF.Controllers
+using VMS.Model.DAL;
+using VMS.Model.TeacherModel;
+namespace VMS.Controllers
 {
     public class TeacherController : ApiController
     {

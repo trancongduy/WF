@@ -43,7 +43,7 @@
 
   // extend functions
   $.fn.wPaint.extend({
-    _showFileModal: function (type, images) {
+    _shoVMSileModal: function (type, images) {
       var _this = this,
           $content = $('<div></div>'),
           $img = null;

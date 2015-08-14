@@ -1,12 +1,12 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using WF.Model.TeacherModel;
-using WF.WebAPI.Base;
+using VMS.Model.TeacherModel;
+using VMS.WebApi.Base;
 using System.ComponentModel.DataAnnotations;
 using System.Collections.Generic;
-using WF.Base;
+using VMS.Base;
 
-namespace WF.Test
+namespace VMS.Test
 {
     [TestClass]
     public class TestValidation

@@ -51,8 +51,9 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Helper\ValidateHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ControllerTest\TeacherControllerTest.cs" />
+    <Compile Include="Controller\TeacherControllerTest.cs" />
     <Compile Include="TestValidation.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -26,7 +26,7 @@ var TableTools;
  * @constructor
  * @param {Object} oDT DataTables instance
  * @param {Object} oOpts TableTools options
- * @param {String} oOpts.sSwfPath ZeroClipboard SWF path
+ * @param {String} oOpts.sSVMSPath ZeroClipboard SVMS path
  * @param {String} oOpts.sRowSelect Row selection options - 'none', 'single' or 'multi'
  * @param {Function} oOpts.fnPreRowSelect Callback function just prior to row selection
  * @param {Function} oOpts.fnRowSelected Callback function just after row selection
@@ -182,12 +182,12 @@ TableTools = function( oDT, oOpts )
 		"custom": {},
 		
 		/**
-		 * SWF movie path
-		 *  @property swfPath
+		 * SVMS movie path
+		 *  @property sVMSPath
 		 *  @type	 string
 		 *  @default  ""
 		 */
-		"swfPath": "",
+		"sVMSPath": "",
 		
 		/**
 		 * Default button set
@@ -706,10 +706,10 @@ TableTools.prototype = {
 		this.s.custom = $.extend( {}, TableTools.DEFAULTS, oOpts );
 		
 		/* Flash file location */
-		this.s.swfPath = this.s.custom.sSwfPath;
+		this.s.sVMSPath = this.s.custom.sSVMSPath;
 		if ( typeof ZeroClipboard_TableTools != 'undefined' )
 		{
-			ZeroClipboard_TableTools.moviePath = this.s.swfPath;
+			ZeroClipboard_TableTools.moviePath = this.s.sVMSPath;
 		}
 		
 		/* Table row selecting */
@@ -1350,11 +1350,11 @@ TableTools.prototype = {
 	
 	
 	/**
-	 * Wait until the id is in the DOM before we "glue" the swf. Note that this function will call
+	 * Wait until the id is in the DOM before we "glue" the sVMS. Note that this function will call
 	 * itself (using setTimeout) until it completes successfully
 	 *  @method  _fnFlashGlue
 	 *  @param   {Object} clip Zero clipboard object
-	 *  @param   {Node} node node to glue swf to
+	 *  @param   {Node} node node to glue sVMS to
 	 *  @param   {String} text title of the flash movie
 	 *  @returns void
 	 *  @private 
@@ -2398,7 +2398,7 @@ TableTools.classes_themeroller = {
  * @namespace TableTools default settings for initialisation
  */
 TableTools.DEFAULTS = {
-	"sSwfPath":        "media/swf/copy_csv_xls_pdf.swf",
+	"sSVMSPath":        "media/sVMS/copy_csv_xls_pdf.sVMS",
 	"sRowSelect":      "none",
 	"sSelectedClass":  null,
 	"fnPreRowSelect":  null,

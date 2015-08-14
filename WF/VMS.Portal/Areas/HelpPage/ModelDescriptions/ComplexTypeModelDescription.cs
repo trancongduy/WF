@@ -1,6 +1,6 @@
 using System.Collections.ObjectModel;
 
-namespace WF.Areas.HelpPage.ModelDescriptions
+namespace VMS.Areas.HelpPage.ModelDescriptions
 {
     public class ComplexTypeModelDescription : ModelDescription
     {

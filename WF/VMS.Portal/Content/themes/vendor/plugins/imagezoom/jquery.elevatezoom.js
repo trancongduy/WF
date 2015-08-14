@@ -763,8 +763,8 @@ if ( typeof Object.create !== 'function' ) {
 				var self = this;              
 				if(change == "show"){      
 					if(!self.isWindowActive){
-						if(self.options.zoomWindowFadeIn){
-							self.zoomWindow.stop(true, true, false).fadeIn(self.options.zoomWindowFadeIn);
+						if(self.options.zoomWindoVMSadeIn){
+							self.zoomWindow.stop(true, true, false).fadeIn(self.options.zoomWindoVMSadeIn);
 						}
 						else{self.zoomWindow.show();}
 						self.isWindowActive = true;
@@ -772,8 +772,8 @@ if ( typeof Object.create !== 'function' ) {
 				}
 				if(change == "hide"){
 					if(self.isWindowActive){
-						if(self.options.zoomWindowFadeOut){
-							self.zoomWindow.stop(true, true).fadeOut(self.options.zoomWindowFadeOut);
+						if(self.options.zoomWindoVMSadeOut){
+							self.zoomWindow.stop(true, true).fadeOut(self.options.zoomWindoVMSadeOut);
 						}
 						else{self.zoomWindow.hide();}
 						self.isWindowActive = false;        
@@ -1733,8 +1733,8 @@ if ( typeof Object.create !== 'function' ) {
 			lensFadeIn: false,
 			lensFadeOut: false,
 			debug: false,
-			zoomWindowFadeIn: false,
-			zoomWindowFadeOut: false,
+			zoomWindoVMSadeIn: false,
+			zoomWindoVMSadeOut: false,
 			zoomWindowAlwaysShow: false,
 			zoomTintFadeIn: false,
 			zoomTintFadeOut: false,

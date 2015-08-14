@@ -18,7 +18,7 @@
 				$('#example').dataTable( {
 					"sDom": 'T<"clear">lfrtip',
 					"oTableTools": {
-						"sSwfPath": "media/swf/copy_csv_xls_pdf.swf"
+						"sSVMSPath": "media/sVMS/copy_csv_xls_pdf.sVMS"
 					}
 				} );
 			} );
@@ -26,10 +26,10 @@
 		</head>
 		<body id="dt_example">
         <div id="container">
-          <div class="full_width big"> TableTools example - setting SWF path </div>
+          <div class="full_width big"> TableTools example - setting SVMS path </div>
           <h1>Preamble</h1>
-          <p>TableTools uses a Flash SWF file to provide the ability to copy text to the system clipboard and save files locally. TableTools must be able to load the SWF file in order to provide these facilities. If you aren't using the same directory structure as the TableTools package, you will need to set this parameter.</p>
-          <p>Note that TableTools ships with two different SWF files - the only difference between them is that one of them provides the ability to save PDF files while the other doesn't. The trade off is that the PDF capable file is significantly larger in size (56K v 2K).</p>
+          <p>TableTools uses a Flash SVMS file to provide the ability to copy text to the system clipboard and save files locally. TableTools must be able to load the SVMS file in order to provide these facilities. If you aren't using the same directory structure as the TableTools package, you will need to set this parameter.</p>
+          <p>Note that TableTools ships with two different SVMS files - the only difference between them is that one of them provides the ability to save PDF files while the other doesn't. The trade off is that the PDF capable file is significantly larger in size (56K v 2K).</p>
           <h1>Live example</h1>
           <div id="demo">
             <table cellpadding="0" cellspacing="0" border="0" class="display" id="example">
@@ -460,14 +460,14 @@
 	$('#example').dataTable( {
 		"sDom": 'T&lt;"clear"&gt;lfrtip',
 		"oTableTools": {
-			"sSwfPath": "media/swf/copy_csv_xls_pdf.swf"
+			"sSVMSPath": "media/sVMS/copy_csv_xls_pdf.sVMS"
 		}
 	} );
 } );</pre>
           <h1>Other examples</h1>
           <ul>
             <li><a href="index.html">Basic initialisation</a></li>
-            <li><a href="swf_path.html">Setting the SWF path</a></li>
+            <li><a href="sVMS_path.html">Setting the SVMS path</a></li>
             <li><a href="alter_buttons.html">Custom button arrangement</a></li>
             <li><a href="button_text.html">Button text alteration</a></li>
             <li><a href="collection.html">Using button collections</a></li>

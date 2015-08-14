@@ -1,6 +1,6 @@
 using System;
 
-namespace WF.Areas.HelpPage.ModelDescriptions
+namespace VMS.Areas.HelpPage.ModelDescriptions
 {
     /// <summary>
     /// Describes a type model.

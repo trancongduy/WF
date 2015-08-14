@@ -1206,7 +1206,7 @@
                 header = '',
                 entries = [],
                 fields, formats, formatlen, fclass, text, i,
-                showFields, showFieldsKey, newFields, fv,
+                shoVMSields, shoVMSieldsKey, neVMSields, fv,
                 formatter, format, fieldlen, j;
             if (this.currentRegion === undefined) {
                 return '';
@@ -1229,18 +1229,18 @@
             if (!$.isArray(fields)) {
                 fields = [fields];
             }
-            showFields = this.options.get('tooltipFormatFieldlist');
-            showFieldsKey = this.options.get('tooltipFormatFieldlistKey');
-            if (showFields && showFieldsKey) {
+            shoVMSields = this.options.get('tooltipFormatFieldlist');
+            shoVMSieldsKey = this.options.get('tooltipFormatFieldlistKey');
+            if (shoVMSields && shoVMSieldsKey) {
                 // user-selected ordering of fields
-                newFields = [];
+                neVMSields = [];
                 for (i = fields.length; i--;) {
-                    fv = fields[i][showFieldsKey];
-                    if ((j = $.inArray(fv, showFields)) != -1) {
-                        newFields[j] = fields[i];
+                    fv = fields[i][shoVMSieldsKey];
+                    if ((j = $.inArray(fv, shoVMSields)) != -1) {
+                        neVMSields[j] = fields[i];
                     }
                 }
-                fields = newFields;
+                fields = neVMSields;
             }
             formatlen = formats.length;
             fieldlen = fields.length;

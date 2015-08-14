@@ -4,9 +4,9 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WF.Model.TeacherModel;
+using VMS.Model.TeacherModel;
 
-namespace WF.Model.DAL
+namespace VMS.Model.DAL
 {
     public class VMSContext : DbContext
     {

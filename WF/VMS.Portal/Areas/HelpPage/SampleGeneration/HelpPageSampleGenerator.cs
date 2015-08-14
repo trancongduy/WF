@@ -13,7 +13,7 @@ using System.Web.Http.Description;
 using System.Xml.Linq;
 using Newtonsoft.Json;
 
-namespace WF.Areas.HelpPage
+namespace VMS.Areas.HelpPage
 {
     /// <summary>
     /// This class will generate the samples for the help page.
@@ -246,15 +246,15 @@ namespace WF.Areas.HelpPage
                 ActualHttpMessageTypes.TryGetValue(new HelpPageSampleKey(sampleDirection, controllerName, actionName, new[] { "*" }), out type))
             {
                 // Re-compute the supported formatters based on type
-                Collection<MediaTypeFormatter> newFormatters = new Collection<MediaTypeFormatter>();
+                Collection<MediaTypeFormatter> neVMSormatters = new Collection<MediaTypeFormatter>();
                 foreach (var formatter in api.ActionDescriptor.Configuration.Formatters)
                 {
                     if (IsFormatSupported(sampleDirection, formatter, type))
                     {
-                        newFormatters.Add(formatter);
+                        neVMSormatters.Add(formatter);
                     }
                 }
-                formatters = newFormatters;
+                formatters = neVMSormatters;
             }
             else
             {

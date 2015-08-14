@@ -5,7 +5,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace WF.Base
+namespace VMS.Base
 {
     static public class RegexUtility
     {

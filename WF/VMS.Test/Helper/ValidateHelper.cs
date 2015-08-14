@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 
-namespace WF.WebAPI.Base
+namespace VMS.Test
 {
     public static class APIhelper
     {

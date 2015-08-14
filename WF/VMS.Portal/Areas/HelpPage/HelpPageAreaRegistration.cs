@@ -1,7 +1,7 @@
 using System.Web.Http;
 using System.Web.Mvc;
 
-namespace WF.Areas.HelpPage
+namespace VMS.Areas.HelpPage
 {
     public class HelpPageAreaRegistration : AreaRegistration
     {

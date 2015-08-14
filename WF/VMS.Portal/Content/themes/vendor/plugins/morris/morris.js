@@ -1248,19 +1248,19 @@
       _results2 = [];
       for (_k = 0, _len = range.length; _k < _len; _k++) {
         i = range[_k];
-        this._drawFillFor(i);
+        this._draVMSillFor(i);
         this._drawLineFor(i);
         _results2.push(this._drawPointFor(i));
       }
       return _results2;
     };
 
-    Area.prototype._drawFillFor = function(index) {
+    Area.prototype._draVMSillFor = function(index) {
       var path;
       path = this.paths[index];
       if (path !== null) {
         path = path + ("L" + (this.transX(this.xmax)) + "," + this.bottom + "L" + (this.transX(this.xmin)) + "," + this.bottom + "Z");
-        return this.drawFilledPath(path, this.fillForSeries(index));
+        return this.draVMSilledPath(path, this.fillForSeries(index));
       }
     };
 
@@ -1270,7 +1270,7 @@
       return Raphael.hsl(color.h, this.options.behaveLikeLine ? color.s * 0.9 : color.s * 0.75, Math.min(0.95, this.options.behaveLikeLine ? color.l * 1.2 : color.l * 1.25));
     };
 
-    Area.prototype.drawFilledPath = function(path, fill) {
+    Area.prototype.draVMSilledPath = function(path, fill) {
       return this.raphael.path(path).attr('fill', fill).attr('fill-opacity', this.options.fillOpacity).attr('stroke-width', 0);
     };
 
