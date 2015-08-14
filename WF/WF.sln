@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.Base", "WF.Base\WF.Base.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF.WebAPI.Base", "WF.WebAPI.Base\WF.WebAPI.Base.csproj", "{C6C5A2BE-CEB5-408C-818F-263B656929BD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VMS.WebTest", "VMS.WebTest\VMS.WebTest.csproj", "{EADE25D5-408E-4266-8315-0FCEFABC3C2C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -79,6 +81,16 @@ Global
 		{C6C5A2BE-CEB5-408C-818F-263B656929BD}.Release|ARM.ActiveCfg = Release|Any CPU
 		{C6C5A2BE-CEB5-408C-818F-263B656929BD}.Release|x64.ActiveCfg = Release|Any CPU
 		{C6C5A2BE-CEB5-408C-818F-263B656929BD}.Release|x86.ActiveCfg = Release|Any CPU
+		{EADE25D5-408E-4266-8315-0FCEFABC3C2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EADE25D5-408E-4266-8315-0FCEFABC3C2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EADE25D5-408E-4266-8315-0FCEFABC3C2C}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{EADE25D5-408E-4266-8315-0FCEFABC3C2C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EADE25D5-408E-4266-8315-0FCEFABC3C2C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EADE25D5-408E-4266-8315-0FCEFABC3C2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EADE25D5-408E-4266-8315-0FCEFABC3C2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EADE25D5-408E-4266-8315-0FCEFABC3C2C}.Release|ARM.ActiveCfg = Release|Any CPU
+		{EADE25D5-408E-4266-8315-0FCEFABC3C2C}.Release|x64.ActiveCfg = Release|Any CPU
+		{EADE25D5-408E-4266-8315-0FCEFABC3C2C}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
