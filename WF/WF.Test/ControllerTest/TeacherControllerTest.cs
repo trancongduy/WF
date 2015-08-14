@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using WF.Model.TeacherModel;
 
 namespace WF.Test.ControllerTest
 {
@@ -7,8 +8,9 @@ namespace WF.Test.ControllerTest
     public class TeacherControllerTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void AddTeacher()
         {
+           // your code here
         }
     }
 }
