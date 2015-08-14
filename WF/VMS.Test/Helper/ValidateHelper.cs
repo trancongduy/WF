@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 
-namespace VMS.Test
+namespace VMS.Test.Helper
 {
-    public static class APIhelper
+    public static class ValidateHelper
     {
         static public bool ValidateObject(this object obj, out List<ValidationResult> messageResult)
         {

@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using VMS.Model.TeacherModel;
 
-namespace VMS.Test.Controller
+namespace VMS.Test.WebApiTest.Controller
 {
     [TestClass]
     public class TeacherControllerTest
