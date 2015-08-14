@@ -62,7 +62,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="TeacherModel\Teacher.cs" />
-    <Compile Include="DAL\WFContext.cs" />
+    <Compile Include="DAL\VMSContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Migrations\201508131207429_WFMigration.resx">
       <DependentUpon>201508131207429_WFMigration.cs</DependentUpon>

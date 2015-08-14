@@ -10,14 +10,14 @@ namespace WF.Controllers
 {
     public class TeacherController : ApiController
     {
-        private WFContext _dbContext;
-        private WFContext DbContext
+        private VMSContext _dbContext;
+        private VMSContext DbContext
         {
             get
             {
                 if (_dbContext == null)
                 {
-                    _dbContext = new WFContext();
+                    _dbContext = new VMSContext();
                 }
                 return _dbContext;
             }

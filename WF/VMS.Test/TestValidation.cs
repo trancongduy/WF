@@ -74,7 +74,7 @@ namespace WF.Test
             #endregion
             foreach (var testcase in testcases)
             {
-                var actual = RegexUtility.CheckEmail(testcase.emailString);
+                var actual = RegexUtility.IsValidEiuEmail(testcase.emailString);
                 Assert.AreEqual(testcase.expected, actual);
             }
         }

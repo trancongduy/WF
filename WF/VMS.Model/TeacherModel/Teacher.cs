@@ -24,6 +24,6 @@ namespace WF.Model.TeacherModel
         [MaxLength(11)]
         [Required]
         public string PhoneNumber { get; set; }
-        public Enums.Status Status { get; set; }
+        //public Enums.Status Status { get; set; }
     }
 }

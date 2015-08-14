@@ -5,14 +5,14 @@ namespace WF.Model.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<WF.Model.DAL.WFContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<WF.Model.DAL.VMSContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(WF.Model.DAL.WFContext context)
+        protected override void Seed(WF.Model.DAL.VMSContext context)
         {
             //  This method will be called after migrating to the latest version.
 

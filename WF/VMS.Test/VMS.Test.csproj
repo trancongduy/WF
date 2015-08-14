@@ -68,6 +68,10 @@
       <Project>{c6c5a2be-ceb5-408c-818f-263b656929bd}</Project>
       <Name>VMS.WebApi.Base</Name>
     </ProjectReference>
+    <ProjectReference Include="..\VMS.WebApi\VMS.WebApi.csproj">
+      <Project>{c8661067-581d-4406-bd80-c5b73a02a841}</Project>
+      <Name>VMS.WebApi</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
