@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace VMS.Portal.Models
+namespace VMS.Model.UserModels
 {
     // Models returned by AccountController actions.
 

@@ -20,7 +20,7 @@ namespace VMS.Portal
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-
-           }
+            ControllerBuilder.Current.DefaultNamespaces.Add("VMS.WebApi.Controllers");
+        }
     }
 }

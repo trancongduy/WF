@@ -13,11 +13,11 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
-using VMS.WebApi.Models;
-using VMS.WebApi.Providers;
-using VMS.WebApi.Results;
+using VMS.Model.UserModels;
+using VMS.Portal.Providers;
+using VMS.Portal.Results;
 
-namespace VMS.WebApi.Controllers
+namespace VMS.Portal.Controllers
 {
     [Authorize]
     [RoutePrefix("api/Account")]

@@ -9,7 +9,7 @@ using Microsoft.Owin.Security.Google;
 using Microsoft.Owin.Security.OAuth;
 using Owin;
 using VMS.Portal.Providers;
-using VMS.Portal.Models;
+using VMS.Model.UserModels;
 
 namespace VMS.Portal
 {
