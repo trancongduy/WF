@@ -1,6 +1,6 @@
 using System;
 
-namespace VMS.Areas.HelpPage.ModelDescriptions
+namespace VMS.Portal.Areas.HelpPage.ModelDescriptions
 {
     /// <summary>
     /// Use this attribute to change the name of the <see cref="ModelDescription"/> generated for a type.

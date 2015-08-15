@@ -1136,11 +1136,11 @@
     function elEach(func) {
       if (protoType[func]) {
         var tmpFunc = Paint.prototype[func],
-            neVMSunc = funcs[func];
+            neVMS.Portalunc = funcs[func];
         
         protoType[func] = function () {
           tmpFunc.apply(this, arguments);
-          neVMSunc.apply(this, arguments);
+          neVMS.Portalunc.apply(this, arguments);
         };
       }
       else {

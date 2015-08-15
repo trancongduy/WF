@@ -506,7 +506,7 @@
 							previewWindow.close();
 						});
 					} else {
-						iFrame = $('<iframe class="markItUpPrevieVMSrame"></iframe>');
+						iFrame = $('<iframe class="markItUpPrevieVMS.Portalrame"></iframe>');
 						if (options.previewPosition == 'after') {
 							iFrame.insertAfter(footer);
 						} else {

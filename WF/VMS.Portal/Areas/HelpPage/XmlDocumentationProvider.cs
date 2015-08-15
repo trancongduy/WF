@@ -5,9 +5,9 @@ using System.Reflection;
 using System.Web.Http.Controllers;
 using System.Web.Http.Description;
 using System.Xml.XPath;
-using VMS.Areas.HelpPage.ModelDescriptions;
+using VMS.Portal.Areas.HelpPage.ModelDescriptions;
 
-namespace VMS.Areas.HelpPage
+namespace VMS.Portal.Areas.HelpPage
 {
     /// <summary>
     /// A custom <see cref="IDocumentationProvider"/> that reads the API documentation from an XML documentation file.

@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace VMS
+namespace VMS.Portal
 {
     public class BundleConfig
     {

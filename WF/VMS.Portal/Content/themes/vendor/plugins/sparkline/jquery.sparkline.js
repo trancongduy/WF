@@ -1206,7 +1206,7 @@
                 header = '',
                 entries = [],
                 fields, formats, formatlen, fclass, text, i,
-                shoVMSields, shoVMSieldsKey, neVMSields, fv,
+                shoVMS.Portalields, shoVMS.PortalieldsKey, neVMS.Portalields, fv,
                 formatter, format, fieldlen, j;
             if (this.currentRegion === undefined) {
                 return '';
@@ -1229,18 +1229,18 @@
             if (!$.isArray(fields)) {
                 fields = [fields];
             }
-            shoVMSields = this.options.get('tooltipFormatFieldlist');
-            shoVMSieldsKey = this.options.get('tooltipFormatFieldlistKey');
-            if (shoVMSields && shoVMSieldsKey) {
+            shoVMS.Portalields = this.options.get('tooltipFormatFieldlist');
+            shoVMS.PortalieldsKey = this.options.get('tooltipFormatFieldlistKey');
+            if (shoVMS.Portalields && shoVMS.PortalieldsKey) {
                 // user-selected ordering of fields
-                neVMSields = [];
+                neVMS.Portalields = [];
                 for (i = fields.length; i--;) {
-                    fv = fields[i][shoVMSieldsKey];
-                    if ((j = $.inArray(fv, shoVMSields)) != -1) {
-                        neVMSields[j] = fields[i];
+                    fv = fields[i][shoVMS.PortalieldsKey];
+                    if ((j = $.inArray(fv, shoVMS.Portalields)) != -1) {
+                        neVMS.Portalields[j] = fields[i];
                     }
                 }
-                fields = neVMSields;
+                fields = neVMS.Portalields;
             }
             formatlen = formats.length;
             fieldlen = fields.length;

@@ -121,7 +121,7 @@ Editableform is linked with one of input types, e.g. 'text', 'select' etc.
                 **/            
                 this.$div.triggerHandler('rendered');                
 
-                this.shoVMSorm();
+                this.shoVMS.Portalorm();
                 
                 //call postrender method to perform actions required visibility of form
                 if(this.input.postrender) {
@@ -160,7 +160,7 @@ Editableform is linked with one of input types, e.g. 'text', 'select' etc.
             this.$loading.show(); 
         },
 
-        shoVMSorm: function(activate) {
+        shoVMS.Portalorm: function(activate) {
             this.$loading.hide();
             this.$form.show();
             if(activate !== false) {
@@ -206,7 +206,7 @@ Editableform is linked with one of input types, e.g. 'text', 'select' etc.
             //validation
             if (error = this.validate(newValue)) {
                 this.error(error);
-                this.shoVMSorm();
+                this.shoVMS.Portalorm();
                 return;
             } 
             
@@ -239,14 +239,14 @@ Editableform is linked with one of input types, e.g. 'text', 'select' etc.
                 //if success callback returns false --> keep form open and do not activate input
                 if(res === false) {
                     this.error(false);
-                    this.shoVMSorm(false);
+                    this.shoVMS.Portalorm(false);
                     return;
                 }
 
                 //if success callback returns string -->  keep form open, show error and activate input               
                 if(typeof res === 'string') {
                     this.error(res);
-                    this.shoVMSorm();
+                    this.shoVMS.Portalorm();
                     return;
                 }
 
@@ -286,7 +286,7 @@ Editableform is linked with one of input types, e.g. 'text', 'select' etc.
                 }
 
                 this.error(msg);
-                this.shoVMSorm();
+                this.shoVMS.Portalorm();
             }, this));
         },
 
@@ -4348,7 +4348,7 @@ Internally value stored as `momentjs` object.
 $(function(){
     $('#dob').editable({
         format: 'YYYY-MM-DD',    
-        vieVMSormat: 'DD.MM.YYYY',    
+        vieVMS.Portalormat: 'DD.MM.YYYY',    
         template: 'D / MMMM / YYYY',    
         combodate: {
                 minYear: 2000,
@@ -4369,9 +4369,9 @@ $(function(){
     var Constructor = function (options) {
         this.init('combodate', options, Constructor.defaults);
         
-        //by default vieVMSormat equals to format
-        if(!this.options.vieVMSormat) {
-            this.options.vieVMSormat = this.options.format;
+        //by default vieVMS.Portalormat equals to format
+        if(!this.options.vieVMS.Portalormat) {
+            this.options.vieVMS.Portalormat = this.options.format;
         }        
         
         //try parse combodate config defined as json string in data-combodate
@@ -4412,13 +4412,13 @@ $(function(){
         },
         
         value2html: function(value, element) {
-            var text = value ? value.format(this.options.vieVMSormat) : '';
+            var text = value ? value.format(this.options.vieVMS.Portalormat) : '';
             //$(element).text(text);
             Constructor.superclass.value2html.call(this, text, element);  
         },
 
         html2value: function(html) {
-            return html ? moment(html, this.options.vieVMSormat) : null;
+            return html ? moment(html, this.options.vieVMS.Portalormat) : null;
         },   
         
         value2str: function(value) {
@@ -4482,11 +4482,11 @@ $(function(){
         Format used for displaying date. Also applied when converting date from element's text on init.   
         If not specified equals to `format`.
         
-        @property vieVMSormat 
+        @property vieVMS.Portalormat 
         @type string
         @default null
         **/          
-        vieVMSormat: null,        
+        vieVMS.Portalormat: null,        
         /**
         Template used for displaying dropdowns.
         
@@ -6056,7 +6056,7 @@ Since 1.4.0 date has different appearance in **popup** and **inline** modes.
 $(function(){
     $('#dob').editable({
         format: 'yyyy-mm-dd',    
-        vieVMSormat: 'dd/mm/yyyy',    
+        vieVMS.Portalormat: 'dd/mm/yyyy',    
         datepicker: {
                 weekStart: 1
            }
@@ -6085,18 +6085,18 @@ $(function(){
         initPicker: function(options, defaults) {
             //'format' is set directly from settings or data-* attributes
 
-            //by default vieVMSormat equals to format
-            if(!this.options.vieVMSormat) {
-                this.options.vieVMSormat = this.options.format;
+            //by default vieVMS.Portalormat equals to format
+            if(!this.options.vieVMS.Portalormat) {
+                this.options.vieVMS.Portalormat = this.options.format;
             }
             
             //try parse datepicker config defined as json string in data-datepicker
             options.datepicker = $.fn.editableutils.tryParseJson(options.datepicker, true);
             
             //overriding datepicker config (as by default jQuery extend() is not recursive)
-            //since 1.4 datepicker internally uses vieVMSormat instead of format. Format is for submit only
+            //since 1.4 datepicker internally uses vieVMS.Portalormat instead of format. Format is for submit only
             this.options.datepicker = $.extend({}, defaults.datepicker, options.datepicker, {
-                format: this.options.vieVMSormat
+                format: this.options.vieVMS.Portalormat
             });
             
             //language
@@ -6107,7 +6107,7 @@ $(function(){
 
             //store parsed formats
             this.parsedFormat = this.dpg.parseFormat(this.options.format);
-            this.parsedVieVMSormat = this.dpg.parseFormat(this.options.vieVMSormat);            
+            this.parsedVieVMS.Portalormat = this.dpg.parseFormat(this.options.vieVMS.Portalormat);            
         },
         
         render: function () {
@@ -6126,12 +6126,12 @@ $(function(){
         },
         
         value2html: function(value, element) {
-           var text = value ? this.dpg.formatDate(value, this.parsedVieVMSormat, this.options.datepicker.language) : '';
+           var text = value ? this.dpg.formatDate(value, this.parsedVieVMS.Portalormat, this.options.datepicker.language) : '';
            Date.superclass.value2html.call(this, text, element); 
         },
 
         html2value: function(html) {
-            return this.parseDate(html, this.parsedVieVMSormat);
+            return this.parseDate(html, this.parsedVieVMS.Portalormat);
         },   
 
         value2str: function(value) {
@@ -6231,11 +6231,11 @@ $(function(){
         Format used for displaying date. Also applied when converting date from element's text on init.   
         If not specified equals to <code>format</code>
 
-        @property vieVMSormat 
+        @property vieVMS.Portalormat 
         @type string
         @default null
         **/
-        vieVMSormat: null,
+        vieVMS.Portalormat: null,
         /**
         Configuration of datepicker.
         Full list of options: http://vitalets.github.com/bootstrap-datepicker
@@ -6311,7 +6311,7 @@ Automatically shown in inline mode.
         },   
         
        value2input: function(value) {
-           this.$input.val(value ? this.dpg.formatDate(value, this.parsedVieVMSormat, this.options.datepicker.language) : '');
+           this.$input.val(value ? this.dpg.formatDate(value, this.parsedVieVMS.Portalormat, this.options.datepicker.language) : '');
            this.$tpl.bdatepicker('update');
        },
         
@@ -6372,7 +6372,7 @@ and set `language` option.
 $(function(){
     $('#last_seen').editable({
         format: 'yyyy-mm-dd hh:ii',    
-        vieVMSormat: 'dd/mm/yyyy hh:ii',    
+        vieVMS.Portalormat: 'dd/mm/yyyy hh:ii',    
         datetimepicker: {
                 weekStart: 1
            }
@@ -6395,18 +6395,18 @@ $(function(){
         initPicker: function(options, defaults) {
             //'format' is set directly from settings or data-* attributes
 
-            //by default vieVMSormat equals to format
-            if(!this.options.vieVMSormat) {
-                this.options.vieVMSormat = this.options.format;
+            //by default vieVMS.Portalormat equals to format
+            if(!this.options.vieVMS.Portalormat) {
+                this.options.vieVMS.Portalormat = this.options.format;
             }
             
             //try parse datetimepicker config defined as json string in data-datetimepicker
             options.datetimepicker = $.fn.editableutils.tryParseJson(options.datetimepicker, true);
 
             //overriding datetimepicker config (as by default jQuery extend() is not recursive)
-            //since 1.4 datetimepicker internally uses vieVMSormat instead of format. Format is for submit only
+            //since 1.4 datetimepicker internally uses vieVMS.Portalormat instead of format. Format is for submit only
             this.options.datetimepicker = $.extend({}, defaults.datetimepicker, options.datetimepicker, {
-                format: this.options.vieVMSormat
+                format: this.options.vieVMS.Portalormat
             });
 
             //language
@@ -6417,7 +6417,7 @@ $(function(){
 
             //store parsed formats
             this.parsedFormat = this.dpg.parseFormat(this.options.format, this.options.formatType);
-            this.parsedVieVMSormat = this.dpg.parseFormat(this.options.vieVMSormat, this.options.formatType);
+            this.parsedVieVMS.Portalormat = this.dpg.parseFormat(this.options.vieVMS.Portalormat, this.options.formatType);
         },
 
         render: function () {
@@ -6447,7 +6447,7 @@ $(function(){
 
         value2html: function(value, element) {
             //formatDate works with UTCDate!
-            var text = value ? this.dpg.formatDate(this.toUTC(value), this.parsedVieVMSormat, this.options.datetimepicker.language, this.options.formatType) : '';
+            var text = value ? this.dpg.formatDate(this.toUTC(value), this.parsedVieVMS.Portalormat, this.options.datetimepicker.language, this.options.formatType) : '';
             if(element) {
                 DateTime.superclass.value2html.call(this, text, element);
             } else {
@@ -6457,7 +6457,7 @@ $(function(){
 
         html2value: function(html) {
             //parseDate return utc date!
-            var value = this.parseDate(html, this.parsedVieVMSormat); 
+            var value = this.parseDate(html, this.parsedVieVMS.Portalormat); 
             return value ? this.fromUTC(value) : null;
         },
 
@@ -6564,11 +6564,11 @@ $(function(){
         Format used for displaying date. Also applied when converting date from element's text on init.   
         If not specified equals to <code>format</code>
         
-        @property vieVMSormat 
+        @property vieVMS.Portalormat 
         @type string
         @default null
         **/
-        vieVMSormat: null,
+        vieVMS.Portalormat: null,
         /**
         Configuration of datetimepicker.
         Full list of options: https://github.com/smalot/bootstrap-datetimepicker

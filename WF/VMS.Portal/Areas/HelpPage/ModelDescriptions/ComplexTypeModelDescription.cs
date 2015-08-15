@@ -1,6 +1,6 @@
 using System.Collections.ObjectModel;
 
-namespace VMS.Areas.HelpPage.ModelDescriptions
+namespace VMS.Portal.Areas.HelpPage.ModelDescriptions
 {
     public class ComplexTypeModelDescription : ModelDescription
     {

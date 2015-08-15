@@ -101,8 +101,8 @@ package {
 			clipText = newText;
 		}
 		
-		public function setFileName(neVMSileName:String):void {
-			fileName = neVMSileName;
+		public function setFileName(neVMS.PortalileName:String):void {
+			fileName = neVMS.PortalileName;
 		}
 		
 		public function setAction(newAction:String):void {

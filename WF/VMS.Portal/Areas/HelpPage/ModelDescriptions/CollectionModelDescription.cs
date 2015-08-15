@@ -1,4 +1,4 @@
-namespace VMS.Areas.HelpPage.ModelDescriptions
+namespace VMS.Portal.Areas.HelpPage.ModelDescriptions
 {
     public class CollectionModelDescription : ModelDescription
     {

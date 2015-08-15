@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace VMS
+namespace VMS.Portal
 {
     public class FilterConfig
     {

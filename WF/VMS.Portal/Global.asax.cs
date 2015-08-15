@@ -9,7 +9,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 
-namespace VMS
+namespace VMS.Portal
 {
     public class WebApiApplication : System.Web.HttpApplication
     {

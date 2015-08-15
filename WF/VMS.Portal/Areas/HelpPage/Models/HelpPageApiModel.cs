@@ -2,9 +2,9 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Net.Http.Headers;
 using System.Web.Http.Description;
-using VMS.Areas.HelpPage.ModelDescriptions;
+using VMS.Portal.Areas.HelpPage.ModelDescriptions;
 
-namespace VMS.Areas.HelpPage.Models
+namespace VMS.Portal.Areas.HelpPage.Models
 {
     /// <summary>
     /// The model that represents an API displayed on the help page.

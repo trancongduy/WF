@@ -183,7 +183,7 @@
          * Shows the first page
          *
          * */
-        shoVMSirst: function () {
+        shoVMS.Portalirst: function () {
             var pages = this.getPages();
 
             if (pages.first) {
@@ -228,7 +228,7 @@
 
             switch (type) {
             case "first":
-                currentTarget.bootstrapPaginator("shoVMSirst");
+                currentTarget.bootstrapPaginator("shoVMS.Portalirst");
                 break;
             case "prev":
                 currentTarget.bootstrapPaginator("showPrevious");

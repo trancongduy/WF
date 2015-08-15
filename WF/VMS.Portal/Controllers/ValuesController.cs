@@ -5,7 +5,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
-namespace VMS.Controllers
+namespace VMS.Portal.Controllers
 {
     [Authorize]
     public class ValuesController : ApiController

@@ -43,7 +43,7 @@
 
   // extend functions
   $.fn.wPaint.extend({
-    _shoVMSileModal: function (type, images) {
+    _shoVMS.PortalileModal: function (type, images) {
       var _this = this,
           $content = $('<div></div>'),
           $img = null;
