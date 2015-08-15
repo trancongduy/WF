@@ -27,7 +27,7 @@ namespace VMS.Test.BaseTest
             #endregion
             foreach (var testcase in testcases)
             {
-                var actual = RegexUtility.IsValidEiuEmail(testcase.emailString);
+                var actual = ValidateEmail.IsValidEiuEmail(testcase.emailString);
                 Assert.AreEqual(testcase.expected, actual);
             }
         }

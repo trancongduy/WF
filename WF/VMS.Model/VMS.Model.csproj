@@ -68,10 +68,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\IVMSContext.cs" />
     <Compile Include="Enums\Enum.cs" />
-    <Compile Include="Migrations\201508131207429_WFMigration.cs" />
-    <Compile Include="Migrations\201508131207429_WFMigration.Designer.cs">
-      <DependentUpon>201508131207429_WFMigration.cs</DependentUpon>
+    <Compile Include="Migrations\201508151551023_VMSMigration.cs" />
+    <Compile Include="Migrations\201508151551023_VMSMigration.Designer.cs">
+      <DependentUpon>201508151551023_VMSMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="TeacherModel\Teacher.cs" />
@@ -80,8 +81,8 @@
     <Compile Include="UserModels\AccountBindingModels.cs" />
     <Compile Include="UserModels\AccountViewModels.cs" />
     <Compile Include="UserModels\IdentityModels.cs" />
-    <EmbeddedResource Include="Migrations\201508131207429_WFMigration.resx">
-      <DependentUpon>201508131207429_WFMigration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201508151551023_VMSMigration.resx">
+      <DependentUpon>201508151551023_VMSMigration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

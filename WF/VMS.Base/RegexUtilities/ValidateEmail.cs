@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace VMS.Base
 {
-    static public class ValidateEiuEmailPattern
+    static public class ValidateEmail
     {
         #region Initialization
         static private Regex _emailRegex;

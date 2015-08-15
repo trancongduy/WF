@@ -10,29 +10,26 @@ namespace VMS.WebApi.Controllers
 {
     public class TeacherController : ApiController
     {
-        private VMSContext _dbContext;
-        private VMSContext DbContext
+        private IVMSContext db;
+        public TeacherController()
         {
-            get
-            {
-                if (_dbContext == null)
-                {
-                    _dbContext = new VMSContext();
-                }
-                return _dbContext;
-            }
+            db = new VMSContext();
+        }
+        public TeacherController(IVMSContext context)
+        {
+            db = context;
         }
 
         [HttpGet]
         public IHttpActionResult GetTeachers()
         {
-            return Ok(DbContext.Teachers);
+            return Ok(db.Teachers);
         }
 
         [HttpGet]
         public IHttpActionResult FindTeacherByID(int id)
         {
-            return Ok(DbContext.Teachers.SingleOrDefault(n => n.ID == id));
+            return Ok(db.Teachers.SingleOrDefault(n => n.ID == id));
         }
 
         [HttpPost]
@@ -42,8 +39,8 @@ namespace VMS.WebApi.Controllers
             {
                 return BadRequest(ModelState);
             }
-            var addteacher = DbContext.Teachers.Add(teacher);
-            DbContext.SaveChanges();
+            var addteacher = db.Teachers.Add(teacher);
+            db.SaveChanges();
             return CreatedAtRoute("ActionApi", new { action = "FindTeacherByID", id = addteacher.ID }, teacher);
         }
         //test branch

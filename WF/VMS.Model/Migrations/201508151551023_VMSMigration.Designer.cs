@@ -13,7 +13,7 @@ namespace VMS.Model.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201508131207429_VMSMigration"; }
+            get { return "201508151551023_VMSMigration"; }
         }
         
         string IMigrationMetadata.Source

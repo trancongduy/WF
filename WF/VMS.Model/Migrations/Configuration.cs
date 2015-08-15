@@ -4,6 +4,7 @@ namespace VMS.Model.Migrations
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
+    using VMS.Model.TeacherModel;
 
     internal sealed class Configuration : DbMigrationsConfiguration<VMS.Model.DAL.VMSContext>
     {
@@ -26,6 +27,8 @@ namespace VMS.Model.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
+            context.Teachers.AddOrUpdate(t => t.Email, new Teacher { Email = "duy.tran.k1set@eiu.edu.vn", FirstName = "Duy", LastName = "Tran Cong", PhoneNumber = "01262502179" });
+            context.SaveChanges();
         }
     }
 }
