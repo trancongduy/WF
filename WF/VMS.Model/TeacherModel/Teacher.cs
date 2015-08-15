@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using VMS.Base;
+
+
 namespace VMS.Model.TeacherModel
 {
     public class Teacher
@@ -24,6 +26,6 @@ namespace VMS.Model.TeacherModel
         [MaxLength(11)]
         [Required]
         public string PhoneNumber { get; set; }
-        //public Enums.Status Status { get; set; }
+        public VMS.Model.Enums.Enum.Status Status { get; set; }
     }
 }

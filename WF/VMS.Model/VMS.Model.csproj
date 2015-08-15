@@ -68,6 +68,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums\Enum.cs" />
     <Compile Include="Migrations\201508131207429_WFMigration.cs" />
     <Compile Include="Migrations\201508131207429_WFMigration.Designer.cs">
       <DependentUpon>201508131207429_WFMigration.cs</DependentUpon>
