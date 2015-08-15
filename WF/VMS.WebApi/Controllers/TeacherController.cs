@@ -35,7 +35,7 @@ namespace VMS.Controllers
             return Ok(DbContext.Teachers.SingleOrDefault(n => n.ID == id));
         }
 
-        [HttpPost]
+        /*[HttpPost]
         public IHttpActionResult AddTeacher(Teacher teacher)
         {
             if (!ModelState.IsValid)
@@ -45,6 +45,6 @@ namespace VMS.Controllers
             var addteacher = DbContext.Teachers.Add(teacher);
             DbContext.SaveChanges();
             return CreatedAtRoute("ActionApi", new { action = "FindTeacherByID", id = addteacher.ID }, teacher);
-        }
+        }*/
     }
 }
