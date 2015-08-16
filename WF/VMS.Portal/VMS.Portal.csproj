@@ -1764,7 +1764,7 @@
       <Project>{2928d68b-e8aa-46ce-9c42-fda47f4ee713}</Project>
       <Name>VMS.Model</Name>
     </ProjectReference>
-    <ProjectReference Include="..\VMS.WebApi\VMS.PortalApi.csproj">
+    <ProjectReference Include="..\VMS.PortalApi\VMS.PortalApi.csproj">
       <Project>{97a78b2d-6d53-4739-9b73-ac777446d542}</Project>
       <Name>VMS.PortalApi</Name>
     </ProjectReference>
