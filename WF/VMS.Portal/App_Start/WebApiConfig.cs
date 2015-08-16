@@ -28,7 +28,7 @@ namespace VMS.Portal
             config.Routes.MapHttpRoute(
                  name: "ActionApi",
                  routeTemplate: "api/{controller}/{action}/{id}",
-                 defaults: new { id = RouteParameter.Optional }
+                 defaults: new {controller = "Teacher", action = "GetTeachers", id = RouteParameter.Optional }
             );
             
         }

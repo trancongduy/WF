@@ -21,6 +21,15 @@ namespace VMS.Portal
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             ControllerBuilder.Current.DefaultNamespaces.Add("VMS.WebApi.Controllers");
+
+            var formatters = GlobalConfiguration.Configuration.Formatters;
+            formatters.Clear();
+            formatters.Add(new JsonMediaTypeFormatter());
+
+            var json = GlobalConfiguration.Configuration.Formatters.JsonFormatter;
+            json.SerializerSettings.Formatting = Newtonsoft.Json.Formatting.Indented;
+            //json.SerializerSettings.PreserveReferencesHandling = PreserveReferencesHandling.All;
+            json.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
         }
     }
 }
