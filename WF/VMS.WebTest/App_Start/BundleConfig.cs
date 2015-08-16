@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace VMS.WebTest
+namespace VMS.PortalTest
 {
     public class BundleConfig
     {

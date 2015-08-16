@@ -6,7 +6,7 @@ using System.Net.Http;
 using System.Web.Http;
 using VMS.Model.DAL;
 using VMS.Model.TeacherModel;
-namespace VMS.WebApi.Controllers
+namespace VMS.PortalApi.Controllers
 {
     public class TeacherController : ApiController
     {

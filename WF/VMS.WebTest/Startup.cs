@@ -1,8 +1,8 @@
 ﻿using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartupAttribute(typeof(VMS.WebTest.Startup))]
-namespace VMS.WebTest
+[assembly: OwinStartupAttribute(typeof(VMS.PortalTest.Startup))]
+namespace VMS.PortalTest
 {
     public partial class Startup
     {

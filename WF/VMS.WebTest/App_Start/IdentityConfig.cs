@@ -10,9 +10,9 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
-using VMS.WebTest.Models;
+using VMS.PortalTest.Models;
 
-namespace VMS.WebTest
+namespace VMS.PortalTest
 {
     public class EmailService : IIdentityMessageService
     {

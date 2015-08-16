@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace VMS.WebTest
+namespace VMS.PortalTest
 {
     public class RouteConfig
     {

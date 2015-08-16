@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 
-namespace VMS.Test.Helper
+namespace VMS.Portal.Test.Helper
 {
     public static class ValidateHelper
     {

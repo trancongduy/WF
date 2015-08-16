@@ -5,9 +5,9 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
-using VMS.WebTest.Models;
+using VMS.PortalTest.Models;
 
-namespace VMS.WebTest
+namespace VMS.PortalTest
 {
     public partial class Startup
     {

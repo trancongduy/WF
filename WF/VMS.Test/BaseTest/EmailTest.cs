@@ -1,12 +1,11 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using VMS.Model.TeacherModel;
-using VMS.WebApi.Base;
 using System.ComponentModel.DataAnnotations;
 using System.Collections.Generic;
 using VMS.Base;
 
-namespace VMS.Test.BaseTest
+namespace VMS.Portal.Test.BaseTest
 {
     [TestClass]
     public class EmailTest

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace VMS.WebTest.Controllers
+namespace VMS.PortalTest.Controllers
 {
     public class HomeController : Controller
     {

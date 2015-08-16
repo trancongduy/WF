@@ -6,7 +6,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 
-namespace VMS.WebTest
+namespace VMS.PortalTest
 {
     public class MvcApplication : System.Web.HttpApplication
     {

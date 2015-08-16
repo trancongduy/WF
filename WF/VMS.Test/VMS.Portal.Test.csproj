@@ -66,10 +66,6 @@
       <Project>{2928d68b-e8aa-46ce-9c42-fda47f4ee713}</Project>
       <Name>VMS.Model</Name>
     </ProjectReference>
-    <ProjectReference Include="..\VMS.WebApi.Base\VMS.WebApi.Base.csproj">
-      <Project>{c6c5a2be-ceb5-408c-818f-263b656929bd}</Project>
-      <Name>VMS.WebApi.Base</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="WebPageTest\" />

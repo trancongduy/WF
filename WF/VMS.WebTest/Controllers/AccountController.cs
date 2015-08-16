@@ -8,9 +8,9 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using VMS.WebTest.Models;
+using VMS.PortalTest.Models;
 
-namespace VMS.WebTest.Controllers
+namespace VMS.PortalTest.Controllers
 {
     [Authorize]
     public class AccountController : Controller

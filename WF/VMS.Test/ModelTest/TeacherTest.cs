@@ -1,11 +1,11 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.ComponentModel.DataAnnotations;
-using VMS.Test.Helper;
+using VMS.Portal.Test.Helper;
 using System.Collections.Generic;
 using VMS.Model.TeacherModel;
 
-namespace VMS.Test.ModelTest
+namespace VMS.Portal.Test.ModelTest
 {
     [TestClass]
     public class TeacherTest
