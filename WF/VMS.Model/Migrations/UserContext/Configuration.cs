@@ -1,19 +1,18 @@
-namespace VMS.Model.Migrations
+namespace VMS.Model.Migrations.UserContext
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
-    using VMS.Model.TeacherModel;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<VMS.Model.DAL.VMSContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<VMS.Model.UserModels.ApplicationDbContext>
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
-        protected override void Seed(VMS.Model.DAL.VMSContext context)
+        protected override void Seed(VMS.Model.UserModels.ApplicationDbContext context)
         {
             //  This method will be called after migrating to the latest version.
 
@@ -26,8 +25,7 @@ namespace VMS.Model.Migrations
             //      new Person { FullName = "Brice Lambson" },
             //      new Person { FullName = "Rowan Miller" }
             //    );
-            context.Teachers.AddOrUpdate(t => t.Email, new Teacher { Email = "duy.tran.k1set@eiu.edu.vn", FirstName = "Duy", LastName = "Tran Cong", PhoneNumber = "01262502179" });
-            context.SaveChanges();
+            //
         }
     }
 }

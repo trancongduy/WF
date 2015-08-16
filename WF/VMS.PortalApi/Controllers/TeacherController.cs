@@ -23,7 +23,7 @@ namespace VMS.PortalApi.Controllers
         [HttpGet]
         public IHttpActionResult GetTeachers()
         {
-            return Ok(db.Teachers);
+            return Ok(db.Teachers.ToList());
         }
 
         [HttpGet]
@@ -43,6 +43,15 @@ namespace VMS.PortalApi.Controllers
             db.SaveChanges();
             return CreatedAtRoute("ActionApi", new { action = "FindTeacherByID", id = addteacher.ID }, teacher);
         }
-        //test branch
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                db.Dispose();
+                db = null;
+            }
+            base.Dispose(disposing);
+        }
     }
 }

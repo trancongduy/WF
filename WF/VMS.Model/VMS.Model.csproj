@@ -69,21 +69,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL\IVMSContext.cs" />
+    <Compile Include="DiscussionModel\Comment.cs" />
+    <Compile Include="DiscussionModel\Topic.cs" />
     <Compile Include="Enums\Enum.cs" />
-    <Compile Include="Migrations\201508151551023_VMSMigration.cs" />
-    <Compile Include="Migrations\201508151551023_VMSMigration.Designer.cs">
-      <DependentUpon>201508151551023_VMSMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Migrations\UserContext\Configuration.cs" />
+    <Compile Include="Migrations\VMSPortalContext\Configuration.cs" />
     <Compile Include="TeacherModel\Teacher.cs" />
     <Compile Include="DAL\VMSContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserModels\AccountBindingModels.cs" />
     <Compile Include="UserModels\AccountViewModels.cs" />
     <Compile Include="UserModels\IdentityModels.cs" />
-    <EmbeddedResource Include="Migrations\201508151551023_VMSMigration.resx">
-      <DependentUpon>201508151551023_VMSMigration.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="UserModels\UserProfile.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -114,6 +111,7 @@
       <Name>VMS.Base</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

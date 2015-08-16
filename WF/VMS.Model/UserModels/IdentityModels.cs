@@ -16,6 +16,7 @@ namespace VMS.Model.UserModels
             // Add custom user claims here
             return userIdentity;
         }
+        public virtual UserProfile Userprofile { get; set; }
     }
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
@@ -24,7 +25,7 @@ namespace VMS.Model.UserModels
             : base("VMSConnection", throwIfV1Schema: false)
         {
         }
-        
+
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();

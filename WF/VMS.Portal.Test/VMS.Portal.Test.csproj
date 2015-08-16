@@ -35,8 +35,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -56,6 +67,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebApiTest\Controller\TeacherControllerTest.cs" />
     <Compile Include="BaseTest\EmailTest.cs" />
+    <Compile Include="WebApiTest\Model\FakeContext.cs" />
+    <Compile Include="WebApiTest\Model\TestDb.cs" />
+    <Compile Include="WebApiTest\Model\TestObject.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\VMS.Base\VMS.Base.csproj">
@@ -65,6 +79,10 @@
     <ProjectReference Include="..\VMS.Model\VMS.Model.csproj">
       <Project>{2928d68b-e8aa-46ce-9c42-fda47f4ee713}</Project>
       <Name>VMS.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VMS.PortalApi\VMS.PortalApi.csproj">
+      <Project>{97a78b2d-6d53-4739-9b73-ac777446d542}</Project>
+      <Name>VMS.PortalApi</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
