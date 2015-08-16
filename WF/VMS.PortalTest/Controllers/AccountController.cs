@@ -303,6 +303,12 @@ namespace VMS.PortalTest.Controllers
             return View();
         }
 
+        [AllowAnonymous]
+        public ActionResult DemoValidateForm()
+        {
+            return View();
+        }
+
         //
         // POST: /Account/SendCode
         [HttpPost]

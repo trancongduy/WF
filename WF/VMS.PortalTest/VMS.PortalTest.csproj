@@ -212,6 +212,7 @@
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Account\DemoValidateForm.cshtml" />
     <Content Include="Views\Account\TestChangePassword.cshtml" />
   </ItemGroup>
   <ItemGroup>
