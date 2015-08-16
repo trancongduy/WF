@@ -200,6 +200,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="LoginArea\Controllers\HomeController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="LoginArea\Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="LoginArea\Results\ChallengeResult.cs" />
@@ -1758,6 +1759,7 @@
     <Content Include="Content\themes\vendor\plugins\morris\spec\support\placeholder.coffee" />
     <Content Include="Content\themes\vendor\plugins\notepad\lib\mixins.styl" />
     <None Include="Project_Readme.html" />
+    <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\VMS.Model\VMS.Model.csproj">

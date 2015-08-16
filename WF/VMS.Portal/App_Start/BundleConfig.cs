@@ -10,11 +10,13 @@ namespace VMS.Portal
         {
             bundles.Add(new StyleBundle("~/Content/Themes/css").Include(
                       "~/Content/themes/css/theme.css",
-                      "~/Content/themes/css/vendor.css",
                       "~/Content/themes/css/utility.css",
-                       "~/Content/themes/vendor/bootstrap/css/bootstrap.min.css"
+                      "~/Content/themes/css/vendor.css"
                       ));
 
+            bundles.Add(new StyleBundle("~/Content/bootstrap/css").Include(
+                       "~/Content/themes/vendor/bootstrap/css/bootstrap.min.css"
+                       ));
             bundles.Add(new ScriptBundle("~/Content/Themes/js").Include(
                       "~/Content/themes/js/main.js",
                       "~/Content/themes/js/ajax.js",
