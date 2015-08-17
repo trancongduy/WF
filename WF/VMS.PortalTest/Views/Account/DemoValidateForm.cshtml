@@ -4,7 +4,7 @@
 }
 
 <h2>DemoValidateForm</h2>
-<center ng-app="app" ng-controller="validForm">
+<div ng-app="app" ng-controller="validForm" style="margin-left:100px;">
     <form name="form" novalidate>
         <table>
             <tr>
@@ -12,9 +12,14 @@
                     <label>Old password</label>
                 </td>
                 <td>
-                    <input ng-model="oldPassword" type="password" name="oldpassword" required />
+                    <input ng-model="oldPassword" type="password" name="oldpassword" ng-minlength="6" placeholder="password" required />
+                </td>
+                <td>
                     <div ng-show="form.oldpassword.$touched && form.oldpassword.$error.required">
                         Field required!
+                    </div>
+                    <div ng-show="form.oldpassword.$touched && form.oldpassword.$error.minlength">
+                        At least 6 characters
                     </div>
                 </td>
             </tr>
@@ -23,9 +28,14 @@
                     <label>New password</label>
                 </td>
                 <td>
-                    <input data-ng-model='user.password' type="password" name='password' placeholder='password' required>
+                    <input data-ng-model='user.password' type="password" name='password' ng-minlength="6" placeholder='new password' required>
+                </td>
+                <td>
                     <div ng-show="form.password.$touched && form.password.$error.required">
                         Field required
+                    </div>
+                    <div ng-show="form.password.$touched && form.password.$error.minlength">
+                        At least 6 characters
                     </div>
                 </td>
             </tr>
@@ -34,9 +44,14 @@
                     <label>Confirm password</label>
                 </td>
                 <td>
-                    <input ng-model='user.password_verify' type="password" name='confirm_password' placeholder='confirm password' required data-password-verify="user.password">
+                    <input ng-model='user.password_verify' type="password" name='confirm_password' ng-minlength="6" placeholder='confirm password' required data-password-verify="user.password">
+                </td>
+                <td>
                     <div ng-show="form.confirm_password.$touched && form.confirm_password.$error.required">
                         Field required!
+                    </div>
+                    <div ng-show="form.confirm_password.$touched && form.confirm_password.$error.minlength">
+                        At least 6 characters
                     </div>
                     <div ng-show="form.confirm_password.$error.passwordVerify">
                         Fields are not equal!
@@ -51,7 +66,7 @@
             </tr>
         </table>
     </form>
-</center>
+</div>
 <style>
     td {
         padding: 5px;
